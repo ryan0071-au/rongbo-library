@@ -106,7 +106,7 @@
 
 <script setup>
 import { ref, onMounted } from 'vue'
-import { db } from '@/firebase/init'
+import { db } from '@/firebase/init.js'
 import {
   collection,
   addDoc,
