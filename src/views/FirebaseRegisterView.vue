@@ -41,7 +41,7 @@
 <script setup>
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
-import { auth, db } from '@/firebase/init.js'
+import { auth, db } from '@/firebase/init'
 import { createUserWithEmailAndPassword } from 'firebase/auth'
 import { doc, setDoc, serverTimestamp } from 'firebase/firestore'
 
@@ -96,6 +96,7 @@ const register = async () => {
   background: #f7f8fb;
   padding: 24px;
 }
+
 .card {
   width: 100%;
   max-width: 440px;
@@ -104,16 +105,19 @@ const register = async () => {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
   padding: 28px;
 }
+
 .title {
   margin: 0 0 12px;
   font-size: 22px;
   font-weight: 700;
 }
+
 .field {
   display: grid;
   gap: 8px;
   margin: 14px 0;
 }
+
 .field input,
 .field select {
   border: 1px solid #e5e7eb;
@@ -122,15 +126,18 @@ const register = async () => {
   font-size: 14px;
   outline: none;
 }
+
 .field input:focus,
 .field select:focus {
   border-color: #6366f1;
   box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
 }
+
 .hint {
   color: #6b7280;
   font-size: 12px;
 }
+
 .btn {
   width: 100%;
   margin-top: 10px;
@@ -142,10 +149,12 @@ const register = async () => {
   font-weight: 600;
   cursor: pointer;
 }
+
 .btn:disabled {
   opacity: 0.6;
   cursor: not-allowed;
 }
+
 .alert {
   background: #fee2e2;
   color: #991b1b;
@@ -154,6 +163,7 @@ const register = async () => {
   margin-bottom: 8px;
   font-size: 14px;
 }
+
 .ok {
   background: #dcfce7;
   color: #166534;
@@ -162,6 +172,7 @@ const register = async () => {
   margin-bottom: 8px;
   font-size: 14px;
 }
+
 .muted {
   color: #6b7280;
   font-size: 14px;

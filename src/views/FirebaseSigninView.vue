@@ -60,7 +60,7 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
-import { auth, db } from '@/firebase/init.js'
+import { auth, db } from '@/firebase/init'
 import { signInWithEmailAndPassword, signOut, onAuthStateChanged } from 'firebase/auth'
 import { doc, getDoc } from 'firebase/firestore'
 
@@ -128,6 +128,7 @@ onMounted(() => {
   background: #f7f8fb;
   padding: 24px;
 }
+
 .card {
   width: 100%;
   max-width: 520px;
@@ -136,11 +137,13 @@ onMounted(() => {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
   padding: 28px;
 }
+
 .title {
   margin: 0 0 12px;
   font-size: 22px;
   font-weight: 700;
 }
+
 .roles {
   color: #374151;
   background: #f3f4f6;
@@ -148,11 +151,13 @@ onMounted(() => {
   border-radius: 10px;
   font-size: 14px;
 }
+
 .field {
   display: grid;
   gap: 8px;
   margin: 14px 0;
 }
+
 .field input {
   border: 1px solid #e5e7eb;
   border-radius: 10px;
@@ -160,10 +165,12 @@ onMounted(() => {
   font-size: 14px;
   outline: none;
 }
+
 .field input:focus {
   border-color: #6366f1;
   box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
 }
+
 .btn {
   display: inline-block;
   border: none;
@@ -174,18 +181,22 @@ onMounted(() => {
   font-weight: 600;
   cursor: pointer;
 }
+
 .btn:disabled {
   opacity: 0.6;
   cursor: not-allowed;
 }
+
 .btn.ghost {
   background: #eef2ff;
   color: #3730a3;
   margin-right: 8px;
 }
+
 .btn.danger {
   background: #ef4444;
 }
+
 .alert {
   background: #fee2e2;
   color: #991b1b;
@@ -194,31 +205,37 @@ onMounted(() => {
   margin: 10px 0;
   font-size: 14px;
 }
+
 .muted {
   color: #6b7280;
   font-size: 14px;
   margin-top: 14px;
   text-align: center;
 }
+
 .idcard {
   border: 1px solid #e5e7eb;
   border-radius: 12px;
   padding: 12px;
   margin: 12px 0;
 }
+
 .idcard .row {
   display: grid;
   grid-template-columns: 100px 1fr;
   gap: 8px;
   padding: 6px 0;
 }
+
 .idcard .k {
   color: #6b7280;
 }
+
 .idcard .v {
   color: #111827;
   word-break: break-all;
 }
+
 .actions {
   display: flex;
   gap: 8px;

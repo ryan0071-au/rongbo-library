@@ -106,7 +106,7 @@
 
 <script setup>
 import { ref, onMounted } from 'vue'
-import { db } from '@/firebase/init.js'
+import { db } from '@/firebase/init'
 import {
   collection,
   addDoc,
@@ -253,17 +253,20 @@ onMounted(runQuery)
   display: grid;
   gap: 16px;
 }
+
 .card {
   background: #fff;
   border-radius: 16px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
   padding: 20px;
 }
+
 .title {
   margin: 0 0 8px;
   font-size: 22px;
   font-weight: 700;
 }
+
 .subtitle {
   margin: 0 0 12px;
   font-size: 18px;
@@ -277,10 +280,12 @@ onMounted(runQuery)
   gap: 12px;
   align-items: end;
 }
+
 .field {
   display: grid;
   gap: 6px;
 }
+
 .field input,
 .qfield input,
 .qfield select,
@@ -291,6 +296,7 @@ onMounted(runQuery)
   font-size: 14px;
   outline: none;
 }
+
 .field input:focus,
 .qfield input:focus,
 .qfield select:focus,
@@ -298,6 +304,7 @@ onMounted(runQuery)
   border-color: #6366f1;
   box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
 }
+
 .hint {
   color: #6b7280;
   font-size: 12px;
@@ -332,13 +339,16 @@ onMounted(runQuery)
   font-weight: 600;
   cursor: pointer;
 }
+
 .btn.ghost {
   background: #eef2ff;
   color: #3730a3;
 }
+
 .btn.danger {
   background: #ef4444;
 }
+
 .btn.small {
   padding: 6px 10px;
   font-size: 12px;
@@ -349,6 +359,7 @@ onMounted(runQuery)
   width: 100%;
   border-collapse: collapse;
 }
+
 .table th,
 .table td {
   text-align: left;
@@ -356,10 +367,12 @@ onMounted(runQuery)
   border-bottom: 1px solid #f1f5f9;
   vertical-align: middle;
 }
+
 .actions {
   display: flex;
   gap: 8px;
 }
+
 .empty {
   color: #6b7280;
   padding: 6px 0;
@@ -370,12 +383,15 @@ onMounted(runQuery)
   .form {
     grid-template-columns: 1fr;
   }
+
   .query-grid {
     grid-template-columns: 1fr 1fr;
   }
+
   .toolbar {
     justify-content: stretch;
   }
+
   .toolbar .btn {
     width: 100%;
   }
