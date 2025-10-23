@@ -9,7 +9,7 @@
 
 <script setup>
 import { ref, onMounted } from 'vue'
-import { db } from '../Firebase/init'
+import { db } from '../firebase/init'
 import { collection, query, where, getDocs } from 'firebase/firestore'
 
 const books = ref([])
