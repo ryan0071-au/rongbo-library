@@ -1,0 +1,50 @@
+h1,
+.page-title {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.page-subtitle {
+  text-align: center;
+  color: #6c757d;
+  margin-bottom: 1.5rem;
+}
+
+.app-shell {
+  min-height: 100vh;
+  background: #fff;
+}
+
+main.container {
+  max-width: 960px;
+}
+
+.form {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#username:focus,
+#password:focus,
+#confirm-password:focus,
+#isAustralian:focus,
+#reason:focus,
+#suburb:focus .text-danger {
+  font-size: 0.875rem;
+}
+
+.text-success {
+  font-size: 0.875rem;
+}
+
+button.btn {
+  min-width: 100px;
+}
+
+header {
+  margin-bottom: 1.5rem;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #275fda;
+}
