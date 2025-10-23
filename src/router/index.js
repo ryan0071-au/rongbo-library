@@ -10,6 +10,7 @@ import AddBookView from '@/views/AddBookView.vue'
 import GetBookCountView from '@/views/GetBookCountView.vue'
 import WeatherView from '@/views/WeatherView.vue'
 import CountBookAPI from '@/views/CountBookAPI.vue'
+import { createRouter, createWebHistory } from 'vue-router'
 
 const routes = [
   { path: '/', name: 'Home', component: HomeView },
@@ -25,7 +26,7 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory(process.env.BASE_URL),
   routes,
 })
 
